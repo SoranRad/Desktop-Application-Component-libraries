@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<iasettings>
+  <projectproperties>
+    <manufacturer>Sonsy.Soft-PC</manufacturer>
+    <productname>MS_Control</productname>
+    <productversion>1.0.0.0</productversion>
+    <productcode>{794444cc-48e6-4057-bc36-2d8b92af1ab4}</productcode>
+    <upgradecode>{0e20e135-4f2a-4649-8cf0-45ade4ee2272}</upgradecode>
+    <language>0</language>
+    <languagename>English</languagename>
+  </projectproperties>
+  <summary>
+    <title>MS_Control</title>
+    <subject>MS_Control</subject>
+    <author>Sonsy.Soft-PC</author>
+    <summarycomments>MS_Control</summarycomments>
+    <revisioncode>{c599deb8-5a62-4082-a0c8-dc0f87637fdb}</revisioncode>
+    <uacelevation>highestAvailable</uacelevation>
+  </summary>
+  <addremove>
+    <publishername>Sonsy.Soft-PC</publishername>
+    <contactname>Sonsy.Soft-PC</contactname>
+    <helplink>http://www.mywebsite.com</helplink>
+    <productupdatelink>http://www.mywebsite.com</productupdatelink>
+    <addremovecomments>All Rights Reserved</addremovecomments>
+    <iconfile />
+  </addremove>
+  <codegen>
+    <generateincludefiles>1</generateincludefiles>
+    <generatefeatures>0</generatefeatures>
+    <refreshscript>0</refreshscript>
+  </codegen>
+  <compilervariables>
+    <variables />
+  </compilervariables>
+  <build>
+    <buildtype>0</buildtype>
+  </build>
+  <files>
+    <filedetails filename="G:\My Project\C#\__Mohsen__\MS_Control_New\MS_Control\bin\Debug\MS_Control.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <filedetails filename="G:\My Project\C#\__Mohsen__\MS_Control_New\MS_Control_Test\bin\Debug\MS_Control_Test.exe" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="1" runprogram="1" installfilecommand="1" />
+    <filedetails filename="G:\My Project\C#\__Mohsen__\MS_Control_New\MS_Grid_Print\bin\Debug\MS_Grid_Print.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+  </files>
+  <dependencies>
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\DevComponents.DotNetBar.Design.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\DevComponents.DotNetBar2.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Data.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.ButtonBar.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.CalendarCombo.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.Common.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.ExplorerBar.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.FilterEditor.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.GridEX.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.Ribbon.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.Schedule.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.TimeLine.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\New Janus 3\Janus.Windows.UI.v3.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.ConnectionInfo.dll" targetlocation="GAC" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Management.Sdk.Sfc.dll" targetlocation="GAC" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="C:\Program Files (x86)\Microsoft SQL Server\120\SDK\Assemblies\Microsoft.SqlServer.Smo.dll" targetlocation="GAC" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\MS_Control_New\MS_Control\bin\Debug\MS_Control.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+    <dependencydetails filename="G:\My Project\C#\__Mohsen__\MS_Control_New\MS_Grid_Print\bin\Debug\MS_Grid_Print.dll" targetlocation="$TARGETDIR$" generatenativeimage="0" registerassembly="0" runinstallerclass="0" createshortcut="0" runprogram="0" installfilecommand="0" />
+  </dependencies>
+  <dialogtheme>
+    <themename>Official</themename>
+  </dialogtheme>
+  <authenticode>
+    <sign>0</sign>
+    <certificatefile />
+    <keyfile />
+    <productinfourl />
+    <authpassword />
+    <timestampurl />
+  </authenticode>
+  <compression>
+    <compressiontype>6</compressiontype>
+    <encrypt>0</encrypt>
+    <compressionpassword />
+  </compression>
+  <output>
+    <outputtype>0</outputtype>
+    <location />
+    <filename />
+    <calculatefilehash>0</calculatefilehash>
+    <refreshrevisioncode>1</refreshrevisioncode>
+  </output>
+</iasettings>

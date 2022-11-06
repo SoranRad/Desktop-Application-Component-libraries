@@ -1,0 +1,1127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FFC450DF-4650-4A6F-AB74-6E3C01273615}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MS_Control</RootNamespace>
+    <AssemblyName>MS_Control</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\Output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="Cyotek.Windows.Forms.ImageBox, Version=1.1.4.4, Culture=neutral, PublicKeyToken=58daa28b0b2de221, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Cyotek.Windows.Forms.ImageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=9.5.0.0, Culture=neutral, PublicKeyToken=3caa4ad0ba35cf8d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\DevComponents.DotNetBar.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=9.5.0.0, Culture=neutral, PublicKeyToken=d159a0cb0c2a1170, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\DevComponents.DotNetBar2.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Janus.Data.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Data.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\New Janus 3\Janus.Windows.ButtonBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.CalendarCombo.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.CalendarCombo.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.Common.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.ExplorerBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.FilterEditor.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.FilterEditor.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.GridEX.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Ribbon.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.Ribbon.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Schedule.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.Schedule.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.TimeLine.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.TimeLine.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v3, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Janus.Windows.UI.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionInfo, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Microsoft.SqlServer.ConnectionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Management.Sdk.Sfc, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Microsoft.SqlServer.Management.Sdk.Sfc.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Smo, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Microsoft.SqlServer.Smo.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=13.100.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Microsoft.SqlServer.SqlEnum.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectListView, Version=2.9.1.18955, Culture=neutral, PublicKeyToken=b1c5bf581481bcd4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\ObjectListView.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2015.2.0.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Output\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.ServiceProcess">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\FontComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\Form_ColumnSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Forms\Form_ColumnSetting.Designer.cs">
+      <DependentUpon>Form_ColumnSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Form_Full_Screen_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Form_Full_Screen_Image.Designer.cs">
+      <DependentUpon>Form_Full_Screen_Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Button.Designer.cs">
+      <DependentUpon>MS_Button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Button_GridX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Button_GridX.Designer.cs">
+      <DependentUpon>MS_Button_GridX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Chart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Chart.Designer.cs">
+      <DependentUpon>MS_Chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_CheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_CheckBox.Designer.cs">
+      <DependentUpon>MS_CheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_ComboBox.Designer.cs">
+      <DependentUpon>MS_ComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_ComboBox_Custom.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_ComboBox_Custom.Designer.cs">
+      <DependentUpon>MS_ComboBox_Custom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_ComboBox_Janus.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_ComboBox_Janus.Designer.cs">
+      <DependentUpon>MS_ComboBox_Janus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Decimal_Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Decimal_Label.Designer.cs">
+      <DependentUpon>MS_Decimal_Label.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Filter_Editor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Filter_Editor.Designer.cs">
+      <DependentUpon>MS_Filter_Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Font_ComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_GridX.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_GridX.Designer.cs">
+      <DependentUpon>MS_GridX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_GridX_Setting.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_GridX_Setting.Designer.cs">
+      <DependentUpon>MS_GridX_Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Janus_Custom_Combo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Janus_Custom_Combo.Designer.cs">
+      <DependentUpon>MS_Janus_Custom_Combo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Label.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Label.Designer.cs">
+      <DependentUpon>MS_Label.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Lable_Ex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Lable_Ex.Designer.cs">
+      <DependentUpon>MS_Lable_Ex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Masked_TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Masked_TextBox.Designer.cs">
+      <DependentUpon>MS_Masked_TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Menu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Menu.Designer.cs">
+      <DependentUpon>MS_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Panel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Panel.Designer.cs">
+      <DependentUpon>MS_Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_RadioBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_RadioBox.Designer.cs">
+      <DependentUpon>MS_RadioBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_TextBox.Designer.cs">
+      <DependentUpon>MS_TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Text_Simple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Text_Simple.Designer.cs">
+      <DependentUpon>MS_Text_Simple.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Tool_Strip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Tool_Strip.Designer.cs">
+      <DependentUpon>MS_Tool_Strip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MS_Vertical_Lable.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MS_Notify.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomCombo\CustomComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomCombo\OldNewEvent.cs" />
+    <Compile Include="CustomCombo\PopupControl.cs" />
+    <Compile Include="DataBase\Attach_Deatach_DB\Form_Attach_Deattach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\Attach_Deatach_DB\Form_Attach_Deattach.Designer.cs">
+      <DependentUpon>Form_Attach_Deattach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Con_Str\Form_Con_Str.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\Con_Str\Form_Con_Str.Designer.cs">
+      <DependentUpon>Form_Con_Str.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Con_Str\Form_Con_Str_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\Con_Str\Form_Con_Str_New.Designer.cs">
+      <DependentUpon>Form_Con_Str_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Form_CMD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\Form_CMD.Designer.cs">
+      <DependentUpon>Form_CMD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Form_RunServiceSql.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\Form_RunServiceSql.Designer.cs">
+      <DependentUpon>Form_RunServiceSql.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SqlFolderBrowse\Form_Add_Back_Up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\SqlFolderBrowse\Form_Add_Back_Up.Designer.cs">
+      <DependentUpon>Form_Add_Back_Up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SqlFolderBrowse\Form_Restore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase\SqlFolderBrowse\Form_Restore_Back_Up.Designer.cs">
+      <DependentUpon>Form_Restore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SqlFolderBrowse\SQLServerFolderBrowse.cs" />
+    <Compile Include="Filter_Manage\Form_Chart_GridEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filter_Manage\Form_Chart_GridEX.Designer.cs">
+      <DependentUpon>Form_Chart_GridEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filter_Manage\Form_FilterEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filter_Manage\Form_FilterEditor.Designer.cs">
+      <DependentUpon>Form_FilterEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filter_Manage\Form_Manage_Filter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filter_Manage\Form_Manage_Filter.Designer.cs">
+      <DependentUpon>Form_Manage_Filter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filter_Manage\Form_Select_Column.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Filter_Manage\Form_Select_Column.Designer.cs">
+      <DependentUpon>Form_Select_Column.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Notify2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Notify2.Designer.cs">
+      <DependentUpon>Form_Notify2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Notify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Notify.Designer.cs">
+      <DependentUpon>Form_Notify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hardware\Hardware.cs" />
+    <Compile Include="Image\DragHandle.cs" />
+    <Compile Include="Image\DragHandleCollection.cs" />
+    <Compile Include="Image\Form_Image_Editor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Image\Form_Image_Editor.Designer.cs">
+      <DependentUpon>Form_Image_Editor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image\Form_Image_Viewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Image\Form_Image_Viewer.Designer.cs">
+      <DependentUpon>Form_Image_Viewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Image\ImageBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Image\MS_Util.cs" />
+    <Compile Include="KeyBoardMouseHook\Hook.cs" />
+    <Compile Include="KeyBoardMouseHook\HotKeys\HotKeyArgs.cs" />
+    <Compile Include="KeyBoardMouseHook\HotKeys\HotKeySet.cs" />
+    <Compile Include="KeyBoardMouseHook\HotKeys\HotKeySetCollection.cs" />
+    <Compile Include="KeyBoardMouseHook\HotKeys\HotKeySetsListener.cs" />
+    <Compile Include="KeyBoardMouseHook\IKeyboardEvents.cs" />
+    <Compile Include="KeyBoardMouseHook\IKeyboardMouseEvents.cs" />
+    <Compile Include="KeyBoardMouseHook\IMouseEvents.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\AppEventFacade.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\AppKeyListener.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\AppMouseListener.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\BaseListener.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\ButtonSet.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\Callback.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\EventFacade.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\GlobalEventFacade.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\GlobalKeyListener.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\GlobalMouseListener.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\KeyboardState.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\KeyListener.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\MouseListener.cs" />
+    <Compile Include="KeyBoardMouseHook\Implementation\Subscribe.cs" />
+    <Compile Include="KeyBoardMouseHook\KeyEventArgsExt.cs" />
+    <Compile Include="KeyBoardMouseHook\KeyPressEventArgsExt.cs" />
+    <Compile Include="KeyBoardMouseHook\KM_Hooking.cs" />
+    <Compile Include="KeyBoardMouseHook\MouseEventExtArgs.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\AppMouseStruct.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\CallbackData.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\HookHelper.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\HookIds.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\HookNativeMethods.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\HookProcedure.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\HookProcedureHandle.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\HookResult.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\HotkeysNativeMethods.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\KeyboardHookStruct.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\KeyboardNativeMethods.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\Messages.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\MouseNativeMethods.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\MouseStruct.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\Point.cs" />
+    <Compile Include="KeyBoardMouseHook\WinApi\ThreadNativeMethods.cs" />
+    <Compile Include="MainForms\Form_Mother_IRANSans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\Form_Mother_IRANSans.Designer.cs">
+      <DependentUpon>Form_Mother_IRANSans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSG\MS_Message.cs" />
+    <Compile Include="MSG\Msg_Box.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSG\Msg_Box.Designer.cs">
+      <DependentUpon>Msg_Box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSMessage.Designer.cs">
+      <DependentUpon>MSMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MSWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MSWait.Designer.cs">
+      <DependentUpon>MSWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Aggregation_GrideX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MS_Aggregation_GrideX.Designer.cs">
+      <DependentUpon>MS_Aggregation_GrideX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Anchor\MS_Achor_Enum.cs" />
+    <Compile Include="MS_Anchor\MS_Anchor.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MS_Anchor\MS_Anchors.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MS_Filter_Condition.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MS_Filter_Condition.Designer.cs">
+      <DependentUpon>MS_Filter_Condition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Filter_GrideX.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MS_Filter_GrideX.Designer.cs">
+      <DependentUpon>MS_Filter_GrideX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Janus_Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MS_Janus_Settings.Designer.cs">
+      <DependentUpon>MS_Janus_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\MS_Mother.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MS_Mother.Designer.cs">
+      <DependentUpon>MS_Mother.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\MS_Mother_Mali.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MS_Mother_Mali.Designer.cs">
+      <DependentUpon>MS_Mother_Mali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\MS_Mother_Two.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\MS_Mother_Two.Designer.cs">
+      <DependentUpon>MS_Mother_Two.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Print_GridEX\Form_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_Print_GridEX\Form_List.Designer.cs">
+      <DependentUpon>Form_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Print_GridEX\Model\NzCustomPrint.cs" />
+    <Compile Include="MS_Print_GridEX\MS_Print_GridEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_Print_GridEX\MS_Print_GridEX.Designer.cs">
+      <DependentUpon>MS_Print_GridEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MS_Print_GridEX\Model\NzColumn.cs" />
+    <Compile Include="MS_Util\Bits.cs" />
+    <Compile Include="MS_Util\Conversion.cs" />
+    <Compile Include="MS_Util\Hex.cs" />
+    <Compile Include="MS_Util\MS_Extention.cs" />
+    <Compile Include="MS_Util\MS_INPUT.cs" />
+    <Compile Include="MS_Util\MS_Mouse_Input.cs" />
+    <Compile Include="MS_Util\MS_Util.cs" />
+    <Compile Include="MS_Util\ReflectionExtensions.cs" />
+    <Compile Include="MS_Wait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MS_Wait.Designer.cs">
+      <DependentUpon>MS_Wait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MS_Util\MS_Tanzim_Janus_Grid.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Render\Office2007ColorTable.cs" />
+    <Compile Include="Render\Office2007Helpers.cs" />
+    <Compile Include="Render\Office2007Renderer.cs" />
+    <Compile Include="Send_SMS\MS_Send_SMS.cs" />
+    <Compile Include="Tarikh\DotControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tarikh\FieldChangedEventArgs.cs" />
+    <Compile Include="Tarikh\FieldControl.cs" />
+    <Compile Include="Tarikh\MS_Structure_Shamsi.cs" />
+    <Compile Include="Tarikh\MS_Tarikh_Box.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tarikh\MS_Tarikh_Box.Designer.cs">
+      <DependentUpon>MS_Tarikh_Box.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarikh\MS_Tarikh_TextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tarikh\MS_Tarikh_TextBox_Designer.cs" />
+    <Compile Include="Tarikh\MS_TarixBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tarikh\MS_Tatikh_View.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tarikh\MS_Tatikh_View.Designer.cs">
+      <DependentUpon>MS_Tatikh_View.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tarikh\NativeMethods.cs" />
+    <Compile Include="Tarikh\Persian_DateTime_Check.cs" />
+    <Compile Include="Tarikh\Popup_Tarix.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Tarikh\Popup_Tarix.Designer.cs">
+      <DependentUpon>Popup_Tarix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TSDD\CloneToolStripItem.cs" />
+    <Compile Include="TSDD\IGridPopup.cs" />
+    <Compile Include="TSDD\MS_Base_GridPopup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TSDD\MS_Base_GridPopup.Designer.cs">
+      <DependentUpon>MS_Base_GridPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TSDD\MS_TextBox_ADC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TSDD\MS_TextBox_ADC.Designer.cs">
+      <DependentUpon>MS_TextBox_ADC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TSDD\Declerations.cs" />
+    <Compile Include="TSDD\Popup_ToolStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TSDD\Popup_ToolStrip.Designer.cs">
+      <DependentUpon>Popup_ToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WebService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CodeGenerate\" />
+    <Folder Include="DataBase\Create DB\" />
+    <Folder Include="DataBase\Run_SQL_Script\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Forms\Form_ColumnSetting.resx">
+      <DependentUpon>Form_ColumnSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Form_Full_Screen_Image.resx">
+      <DependentUpon>Form_Full_Screen_Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_Button.resx">
+      <DependentUpon>MS_Button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_Button_GridX.resx">
+      <DependentUpon>MS_Button_GridX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_Chart.resx">
+      <DependentUpon>MS_Chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_CheckBox.resx">
+      <DependentUpon>MS_CheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_ComboBox.resx">
+      <DependentUpon>MS_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_ComboBox_Custom.resx">
+      <DependentUpon>MS_ComboBox_Custom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_ComboBox_Janus.resx">
+      <DependentUpon>MS_ComboBox_Janus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_Font_ComboBox.resx">
+      <DependentUpon>MS_Font_ComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_GridX.resx">
+      <DependentUpon>MS_GridX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_GridX_Setting.resx">
+      <DependentUpon>MS_GridX_Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_Janus_Custom_Combo.resx">
+      <DependentUpon>MS_Janus_Custom_Combo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_RadioBox.resx">
+      <DependentUpon>MS_RadioBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MS_TextBox.resx">
+      <DependentUpon>MS_TextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\NumericTextBox.resx">
+      <DependentUpon>NumericTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomCombo\CustomComboBox.resx">
+      <DependentUpon>CustomComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\Attach_Deatach_DB\Form_Attach_Deattach.resx">
+      <DependentUpon>Form_Attach_Deattach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\Con_Str\Form_Con_Str.resx">
+      <DependentUpon>Form_Con_Str.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\Con_Str\Form_Con_Str_New.resx">
+      <DependentUpon>Form_Con_Str_New.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\Form_CMD.resx">
+      <DependentUpon>Form_CMD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\Form_RunServiceSql.resx">
+      <DependentUpon>Form_RunServiceSql.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\SqlFolderBrowse\Form_Add_Back_Up.resx">
+      <DependentUpon>Form_Add_Back_Up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataBase\SqlFolderBrowse\Form_Restore.resx">
+      <DependentUpon>Form_Restore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filter_Manage\Form_Chart_GridEX.resx">
+      <DependentUpon>Form_Chart_GridEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filter_Manage\Form_FilterEditor.resx">
+      <DependentUpon>Form_FilterEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filter_Manage\Form_Manage_Filter.resx">
+      <DependentUpon>Form_Manage_Filter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Filter_Manage\Form_Select_Column.resx">
+      <DependentUpon>Form_Select_Column.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Notify2.resx">
+      <DependentUpon>Form_Notify2.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Notify.resx">
+      <DependentUpon>Form_Notify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Image\Form_Image_Editor.resx">
+      <DependentUpon>Form_Image_Editor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Image\Form_Image_Viewer.resx">
+      <DependentUpon>Form_Image_Viewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\Form_Mother_IRANSans.resx">
+      <DependentUpon>Form_Mother_IRANSans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSG\Msg_Box.resx">
+      <DependentUpon>Msg_Box.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSMessage.resx">
+      <DependentUpon>MSMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MSWait.resx">
+      <DependentUpon>MSWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Aggregation_GrideX.resx">
+      <DependentUpon>MS_Aggregation_GrideX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Filter_Condition.resx">
+      <DependentUpon>MS_Filter_Condition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Filter_GrideX.resx">
+      <DependentUpon>MS_Filter_GrideX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Janus_Settings.resx">
+      <DependentUpon>MS_Janus_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MS_Mother.resx">
+      <DependentUpon>MS_Mother.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MS_Mother_Mali.resx">
+      <DependentUpon>MS_Mother_Mali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\MS_Mother_Two.resx">
+      <DependentUpon>MS_Mother_Two.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Print_GridEX\Form_List.resx">
+      <DependentUpon>Form_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Print_GridEX\MS_Print_GridEX.resx">
+      <DependentUpon>MS_Print_GridEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MS_Wait.resx">
+      <DependentUpon>MS_Wait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarikh\MS_Tarikh_Box.resx">
+      <DependentUpon>MS_Tarikh_Box.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarikh\MS_Tarikh_TextBox.resx">
+      <DependentUpon>MS_Tarikh_TextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tarikh\MS_Tatikh_View.resx">
+      <DependentUpon>MS_Tatikh_View.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSDD\MS_Base_GridPopup.resx">
+      <DependentUpon>MS_Base_GridPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSDD\MS_TextBox_ADC.resx">
+      <DependentUpon>MS_TextBox_ADC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TSDD\Popup_ToolStrip.resx">
+      <DependentUpon>Popup_ToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="KeyBoardMouseHook\MouseKeyHook.nuspec" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\_MS_Form_Close.png" />
+    <None Include="Web References\WebService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\WebService\v1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MS_Form_Close_Focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MS_Form_Max_Full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MS_Form_Max_Full_Focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MS_Form_Max_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MS_Form_Max_Normal_Focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MS_Form_Min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_MS_Form_Min_Focus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Max_Black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Max_White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\textbox.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_2_icon&amp;16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_icon&amp;16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark_icon&amp;16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://sms-webservice.ir/v1/v1.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WebService\</RelPath>
+      <UpdateFromURL>http://sms-webservice.ir/v1/v1.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MS_Control_WebService_SmsV1</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\WebService\v1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter_reapply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package_games_logic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_select_column.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unmark_to_download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\count.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Group_Box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Outo_Resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btn_Total.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google_custom_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\count1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\max1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\min1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sum.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-office-spreadsheet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\column_single.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category_group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="textfield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="textfield.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tick-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\funnel--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\page_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-resize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-resize-actual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-crop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wait.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WaitBlue.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="KeyBoardMouseHook\HotKeys\ReadMe.txt" />
+    <None Include="Resources\Summary_16x16.png" />
+    <None Include="Resources\table_sort_filter.png" />
+    <None Include="Resources\cog_delete.png" />
+    <None Include="Resources\setting_tools.png" />
+    <None Include="Resources\table_selection_column.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
