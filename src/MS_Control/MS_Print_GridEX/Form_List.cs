@@ -695,6 +695,14 @@ namespace MS_Grid_Print
             DataBand1.RightToLeft = true;
             DataBand1.Page = Page;
             DataBand1.Parent = Page;
+
+            if ( NsGrow.Checked)
+            { 
+	            DataBand1.CanGrow = true;
+	            DataBand1.GrowToHeight = true;
+	            DataBand1.Linked = true;
+            }
+
             Page.Components.Add(DataBand1);
             //==================
             Create_Group_Footer(Page, Report);
@@ -780,6 +788,7 @@ namespace MS_Grid_Print
                 Text9.Interaction= new StiInteraction();
                 Text9.Interaction.SortingColumn = "DataBand1."+ col.DataMember;
                 Text9.Interaction.DrillDownPageGuid = null;
+
                 HeaderBand1.Components.Add(Text9);
                 //==============================
                 var Text10 = new StiText();
@@ -803,7 +812,7 @@ namespace MS_Grid_Print
                 Text10.RightToLeft = true;
 
                 Text10.Interaction = null;
-                Text10.Margins = new StiMargins(0, 0, 0, 0);
+                Text10.Margins = new StiMargins(2, 2, 0, 0);
                 Text10.TextBrush = new StiSolidBrush(Color.Black);
                 Text10.TextOptions = new StiTextOptions(true, false, false, 0F, 
                     System.Drawing.Text.HotkeyPrefix.None, StringTrimming.None);
@@ -813,11 +822,16 @@ namespace MS_Grid_Print
                 Text10.Linked = true;
                 Text10.TextQuality = StiTextQuality.Typographic;
 
-                if (col.WordWrap)
+                if (col.WordWrap || NsGrow.Checked)
                 {
                     Text10.WordWrap = true;
                     Text10.CanGrow = true;
                     Text10.GrowToHeight = true;
+                    Text10.Linked = true;
+                }
+                else if (NsShrink.Checked)
+                {
+	                Text10.ShrinkFontToFit = true;
                 }
 
                 if (FormatConditions.Any(y=>y.TargetColumn!=null && y.TargetColumn.DataMember==x.Column.DataMember))

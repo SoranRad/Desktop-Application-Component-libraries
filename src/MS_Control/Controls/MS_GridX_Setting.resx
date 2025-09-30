@@ -121,24 +121,24 @@
   <data name="ms_excel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJNSURBVDhPlVNLTBNRFJ2diQtRUVCiWPuhdqbzeTO1RYmi
-        wV8s2oARNiw0JhpETVVgGGba8ROiLtToxtSFIagQY4CWSNW48pO4qZGaqDHRgDu/e43I8c0wsvDT6klu
-        cvPuvee9nHse8ycoqlLCJ+Q1okFaeF2+FNSC5U7p7/Ae9M5iTeIVdNIsaooRTEojgiHnOU2aEk9FXE7b
-        7xATclxIkFHekN8LCRl8cjrs3CDgVBGb+qPphjtNqa2D21P1Q7GZ2DYc28XQxpyQUBA0JLDdPOjT7eFA
-        twBOFyHqtHZZQt3wZtQM1ELqC4FcDSM6FENDZmeOCRokbQ0oxyJY1u6BV10BnxqguRdiMgR3RxUevn6E
-        c88uovd5H158fomnH8awY6QZyrVVGYbVhPTi+FLsubIXE5/eYt3pOrC6YOfWWUlrKW7kb+JErgfnn1zA
-        3Yl7uPUmi8ZME6r716YZKlTa1xWAu7MKk98ncf/VA2Tzt/Hl21dUHnVjyWFXcQLJDKH0QDnWn9mIn6jp
-        qcW8tjJUqWxxAmKuxNz9C7HlbNQZByXbQM8WwK9yhQksES2hxKRiD15/PIDRfNbOfVTQinhlYQJfF5su
-        O1QBY9DE+MdxeDr9CB2vtkXc19uGOa3zi7/Aul02w/Ya/RrnrNFje8LT4S+8RmqinEiNZJnGMpLlif8y
-        ErXxESpklg69ozHFJ8iMG4tZuX6wYbfzI6Y/k1+NuIhJGklSUXlDGqIkY5wmInwyvNxp+zcopjKb06XV
-        oklagrqUYtvZRU7pFzDMDy5M1m+56LwgAAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJLSURBVDhPlVNLaBNRFJ2d4MKq1VaL1pivmUlm5s3EpFq0
+        Si0qqZZUbDddKIJSqxK17TSdScYPRV2o6EbiQkrVFpG0k2JTxJUfcBOxEVQEpXXnd69Ye3wzHUX8JHrg
+        8S7v3nve49zzmD9BVuSyYFJaJ2ikLahKlwKJQKWd+jvcB91zWJ24eZW0CglZC6TEUV6TClxCnBFORRx2
+        2e8QklKcT5KxgCq95ZMSgqnZZcUaAacIaBiMGrHxlvTWzPZ0409r20jTLoYW5vmkjIAmgu0Ngj7davb3
+        8uBUAYJKc5dF1I9sRu1QHcSBEMjVMKLDTYhld+YZTiOG2SAfi2BFpwtuZRU8ip/GbgipEJxdXtx/+QDn
+        nlxE/9MBPPv4HI/fTWDHaCuka2uyDJvgjaXx5dhzZS+mPrzGhtP1YFXeis2zsvZy3CjcxIl8H84/uoDb
+        U3dw61UOzdkW1AyuNxgqlOHp8cPZ7cX012ncfXEPucI4Pn35jOqjTiw77ChNIOohlB+oxMYzDfiO2r46
+        LOiogFdhSxMQfTXm71+MLWejdjso2SZ6tgg+hStOYIpoCiWkZKvx+sMhjBVyVuyhglbFq4sTeHpYo+JQ
+        FbSMjsn3k3B1+xA6XmOJuK+/A/PaF5Z+gXm7pIetMfoSnD1Gl+UJV5ev+BipifICNZJpGtNIpif+y0jU
+        xkeokDm6v6GNM8Ek+eHGUlZuzMR22z9i9jP5lIiD6KSZpGQlqInDlGSCSwgInwyvtMv+DbIuz+VUca2g
+        kza6p9lOdomd+gUM8w35HdZUDGKOHgAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="printPreviewDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
+    <value>17, 54</value>
   </metadata>
   <metadata name="gridEXPrintDocument1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 95</value>
+    <value>17, 91</value>
   </metadata>
   <data name="printPreviewDialog1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -314,10 +314,10 @@
 </value>
   </data>
   <metadata name="gridEXExporter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 134</value>
+    <value>17, 128</value>
   </metadata>
   <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 173</value>
+    <value>17, 165</value>
   </metadata>
   <metadata name="ms_column_filter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 56</value>

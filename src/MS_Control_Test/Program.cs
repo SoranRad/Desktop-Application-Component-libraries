@@ -19,9 +19,10 @@ namespace MS_Control_Test
         static void Main()
         {
             ToolStripManager.Renderer = new Office2007Renderer();
-            MS_Mother_Two.MS_Icon_Form = Resources.textfield;
+            //MS_Mother_Two.MS_Icon_Form = Resources.textfield;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new Form_Startup());
             Application.Run(new Form_Mali());
 
         }
